@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="patient" max_length="40" name="x_58872_needit_patient" sizeclass="6" type="collection">
+        <element label="admit date" max_length="40" name="admit_date" type="glide_date"/>
+        <element label="discharge date" max_length="40" name="discharge_date" type="glide_date"/>
+        <element choice="1" label="district" max_length="40" name="district" type="choice">
+            <choice/>
+        </element>
+        <element label="email" max_length="40" name="email" type="string"/>
+        <element label="patient name" max_length="100" name="patient_name" type="string"/>
+        <element label="phone no" max_length="40" name="phone_no" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Kerala" sequence="0" value="100"/>
+                <element inactive_on_update="false" label="Tamil nadu" sequence="1" value="200"/>
+                <element inactive_on_update="false" label="Andhra Pradesh" sequence="2" value="300"/>
+                <element inactive_on_update="false" label="Delhi" sequence="3" value="400"/>
+            </choice>
+        </element>
+        <element choice="1" label="status of patient" max_length="40" name="status_of_patient" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Discharged" sequence="0" value="100"/>
+                <element inactive_on_update="false" label="Admitted" sequence="1" value="200"/>
+            </choice>
+        </element>
+    </element>
+</database>
